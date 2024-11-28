@@ -32,6 +32,7 @@ The main dependencies for running TCNs include:
 - TensorFlow or PyTorch
 - NumPy
 - Matplotlib
+- MATLAB 2023+
 
 You can install the dependencies using the following command:
 
@@ -89,8 +90,8 @@ If you use this code or find this work helpful, please consider citing our paper
 
 ```latex
 @article{lian2024tcn,
-  title={Twisted Convolutional Networks: A Novel Approach for Feature Combination in Machine Learning},
-  author={Junbo Lian},
+  title={Twisted Convolutional Networks (TCNs): A Novel Approach for Robust Feature Combination in Non-Spatial Datasets},
+  author={Junbo Jacob Lian},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2024}
 }
