@@ -8,10 +8,9 @@ Twisted Convolutional Networks (TCNs) introduce a novel approach to feature comb
 
 ## Features
 
-- **Feature Combination Layer**: TCNs generate combined features using element-wise multiplication of feature pairs, creating a richer feature representation.
-
+- **Feature Combination Layer**: TCNs generate combined features using both element-wise multiplication and summation of pairwise products, creating a richer feature representation that captures complex interactions.
+- **Two Feature Combination Methods**: Offers flexibility with two approaches—multiplicative combination for direct feature interactions and summation of pairwise products for enhanced pairwise relationships.
 - **Robust to Feature Order**: The approach reduces reliance on feature ordering, making TCNs suitable for non-spatial datasets.
-
 - **Flexible Architecture**: Includes residual connections, dropout, and batch normalization for improved training stability and model generalization.
 
 ## Installation
@@ -49,7 +48,7 @@ The repository provides scripts to train and evaluate TCN models on benchmark da
 To train a TCN on a dataset, use the following command:
 
 ```bash
-python train_tcn.py --dataset iris --epochs 200 --batch_size 10
+python train_tcn.py --dataset iris --epochs 200 --batch_size 10 --combination_method pairwise
 ```
 
 Arguments:
@@ -57,6 +56,7 @@ Arguments:
 - `--dataset`: Specify the dataset to be used for training (e.g., `iris`).
 - `--epochs`: The number of training epochs.
 - `--batch_size`: The batch size for training.
+- `--combination_method`: Method for feature combination (`multiplicative` or `pairwise`).
 
 ### Evaluation
 
@@ -77,7 +77,7 @@ This repository includes Jupyter notebooks demonstrating the use of TCNs on diff
 
 ## Model Details
 
-TCNs utilize a feature combination strategy to generate higher-order features that capture the interactions between original features. Specifically, for an input with `n` features, TCNs generate `C(n, 2)` combinations using element-wise multiplication. The resulting combined features are then fed into fully connected layers, which include batch normalization, ReLU activation, and dropout for generalization. The TCN model aims to mitigate reliance on feature order and provides a more robust representation for classification tasks.
+TCNs utilize a feature combination strategy to generate higher-order features that capture the interactions between original features. Specifically, for an input with `n` features, TCNs generate `C(n, 2)` combinations using either element-wise multiplication or summation of pairwise products. The resulting combined features are then fed into fully connected layers, which include batch normalization, ReLU activation, and dropout for generalization. The TCN model aims to mitigate reliance on feature order and provides a more robust representation for classification tasks.
 
 ## Results
 
@@ -103,8 +103,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or inquiries, please contact Junbo Lian at [junbolian@qq.com](mailto:junbolian@qq.com).
-
-## Acknowledgments
-
-This project was developed at Zhejiang A&F University. Special thanks to all contributors and supporters.
-
