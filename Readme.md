@@ -13,6 +13,8 @@ Twisted Convolutional Networks (TCNs) introduce a novel approach to feature comb
 - **Robust to Feature Order**: The approach reduces reliance on feature ordering, making TCNs suitable for non-spatial datasets.
 - **Flexible Architecture**: Includes residual connections, dropout, and batch normalization for improved training stability and model generalization.
 
+![TCN_Architecture](TCN_Architecture.png)
+
 ## Installation
 
 To get started with Twisted Convolutional Networks, clone this repository and ensure you have the necessary dependencies installed.
