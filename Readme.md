@@ -91,8 +91,8 @@ The TCN model was evaluated on several benchmark datasets and compared with trad
 If you use this code or find this work helpful, please consider citing our paper:
 
 ```latex
-@article{lian2024tcn,
-  title={Twisted Convolutional Networks (TCNs): A Novel Approach for Robust Feature Combination in Non-Spatial Datasets},
+@article{lian2024tcns,
+  title={Twisted Convolutional Networks (TCNs): Enhancing Feature Interactions for Non-Spatial Data Classification},
   author={Junbo Jacob Lian},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2024}
