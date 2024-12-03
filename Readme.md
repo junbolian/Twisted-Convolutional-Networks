@@ -94,7 +94,7 @@ If you use this code or find this work helpful, please consider citing our paper
 @article{lian2024tcns,
   title={Twisted Convolutional Networks (TCNs): Enhancing Feature Interactions for Non-Spatial Data Classification},
   author={Junbo Jacob Lian},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  journal={arXiv preprint arXiv:2412.00238},
   year={2024}
 }
 ```
