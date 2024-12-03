@@ -56,7 +56,7 @@ python train_tcn.py --dataset iris --epochs 200 --batch_size 10 --combination_me
 
 Arguments:
 
-- `--dataset`: Specify the dataset to be used for training (e.g., `iris`).
+- `--dataset`: Specify the dataset to be used for training (e.g., `Breast Cancer`).
 - `--epochs`: The number of training epochs.
 - `--batch_size`: The batch size for training.
 - `--combination_method`: Method for feature combination (`multiplicative` or `pairwise`).
