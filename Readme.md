@@ -1,12 +1,3 @@
-You're right — the previous draft read like a quick project note rather than a **formal, citable GitHub README**. Below is a tightened, publication-style README you can drop into `README.md`. It:
-
-* Adds a **projection-based residual** variant with clear **Python & MATLAB** usage (aligned with your MATLAB script).
-* States **intended use cases** (many features → prefer projection; accuracy impact is typically small).
-* Includes **computational complexity**, **reproducibility**, and a **References** section with canonical works on explicit interaction modeling.
-* Keeps your paper as the primary citation and adds BibTeX.
-
----
-
 # Twisted Convolutional Networks (TCNs)
 
 TCNs explicitly construct interaction features for non-spatial/tabular data and are robust to feature ordering. This repo includes both the original TCN and a **projection-based residual** variant that drastically cuts parameters/VRAM while keeping accuracy close to full-width baselines.
