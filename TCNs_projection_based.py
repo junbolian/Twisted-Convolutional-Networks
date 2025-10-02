@@ -1,9 +1,10 @@
 """
-Twisted Convolutional Networks (TCNs) - Python Implementation
+Twisted Convolutional Networks (TCNs): Enhancing Feature Interactions for Non-Spatial Data Classification
 Projection-based TCN Model
 Original MATLAB code converted to Python using TensorFlow/Keras
-Author: Converted from Junbo Jacob Lian's MATLAB implementation
+Author: Junbo Jacob Lian
 Date: Sep 29, 2025
+https://github.com/junbolian/Twisted-Convolutional-Networks
 """
 
 import numpy as np
@@ -398,4 +399,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
