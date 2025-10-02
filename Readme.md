@@ -1,14 +1,25 @@
 # Twisted Convolutional Networks (TCNs)
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/junbolian/Twisted-Convolutional-Networks)
+![GitHub repo size](https://img.shields.io/github/repo-size/junbolian/Twisted-Convolutional-Networks)
+![GitHub language count](https://img.shields.io/github/languages/count/junbolian/Twisted-Convolutional-Networks)
+![GitHub last commit](https://img.shields.io/github/last-commit/junbolian/Twisted-Convolutional-Networks)
+![GitHub issues](https://img.shields.io/github/issues/junbolian/Twisted-Convolutional-Networks)
+![GitHub forks](https://img.shields.io/github/forks/junbolian/Twisted-Convolutional-Networks)
+![GitHub stars](https://img.shields.io/github/stars/junbolian/Twisted-Convolutional-Networks)
+![GitHub watchers](https://img.shields.io/github/watchers/junbolian/Twisted-Convolutional-Networks)
+![GitHub contributors](https://img.shields.io/github/contributors/junbolian/Twisted-Convolutional-Networks)
+
 TCNs explicitly construct interaction features for non-spatial/tabular data and are robust to feature ordering. This repo includes both the original TCN and a **projection-based residual** variant that drastically cuts parameters/VRAM while keeping accuracy close to full-width baselines.
 
-![TCN vs CNN Comparison](TCN.vs.CNN.png)
-![TCN Architecture](TCN_Architecture.png)
+
 
 ## Overview
 
 Traditional CNNs depend on adjacency and order; many tabular datasets have neither. **Twisted Convolutional Networks (TCNs)** sidestep this by **explicitly generating interaction features** from subsets of the input dimensions (e.g., multiplicative products or pairwise-product sums). The interaction tensor is then passed to lightweight heads (BN/ReLU/Dropout and residual paths). This repo provides training/evaluation code and a **projection-based residual** that keeps models compact and training stable on wide feature sets.
 
+![TCN vs CNN Comparison](TCN.vs.CNN.png)
+![TCN Architecture](TCN_Architecture.png)
 ---
 
 ## What’s New — Projection-based Residual (Recommended for Many Features)
@@ -136,11 +147,7 @@ The provided MATLAB script implements the **projection residual** end-to-end and
 ├─ train_tcn.py                # Training entry (Python)
 ├─ evaluate_tcn.py             # Evaluation entry (Python)
 ├─ TCNs_projection_based.py    # Projection residual reference (Python)
-├─ matlab/
-│  └─ tcn_projection_demo.m    # End-to-end script (projection residual; matches README)
-├─ notebooks/                  # Demos (Iris, Breast Cancer, custom CSVs)
-├─ results/                    # Logs, metrics, plots
-├─ requirements.txt
+├─ tcn_projection_demo.m       # End-to-end script (projection residual; matches README)
 └─ README.md
 ```
 
